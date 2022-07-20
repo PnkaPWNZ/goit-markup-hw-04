@@ -205,12 +205,25 @@ letter-spacing: 0.02em;
 }
 .contacts {
     display:flex;
-
     align-items: center;
     margin-left: auto;
-
-
 }
+
+
+
+.contacts-icon-header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;   
+    gap: 10px;
+    color: var(--primary-text-color)
+}
+
+.contacts-icon-header:hover {
+    color: var(--accent-color);
+} 
+
 .contacts .item + .item {
     margin-left: 50px;
 }
