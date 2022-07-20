@@ -205,7 +205,8 @@ letter-spacing: 0.02em;
 }
 .contacts {
     display:flex;
-    flex-direction:row;
+
+    align-items: center;
     margin-left: auto;
 
 
@@ -235,11 +236,19 @@ letter-spacing: 0.02em;
 
 
 .mail {
+ 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14px;    
     
 }
+
+.contacts-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ----------------------------------hero-----------------#2F303A;---------------------- */
 .hero {
@@ -476,6 +485,10 @@ letter-spacing: 0.02em;
     border-radius: 4px;
 }
 
+.client-item:hover {
+border-color: var(--accent-color);
+}
+
 .client-link {
     display: flex;
     width: 100%;
@@ -488,6 +501,11 @@ letter-spacing: 0.02em;
 .client-icon {
     fill: currentColor;
 }
+
+.client-icon:hover {
+    color: var(--accent-color);
+}
+
 .second-color {
     color: var(--accent-color);
 }
@@ -534,6 +552,8 @@ margin-bottom: 20px;
 .footer-social-list {
     display: flex;
     justify-content: center;
+    gap: 10px;
+
     
 }
 
@@ -551,7 +571,12 @@ margin-bottom: 20px;
     background-color:rgba(255, 255, 255, 0.1);;
     border-radius: 50%;
 }
-              
+
+.footer-social-link:hover {
+background-color: var(--accent-color);
+}       
+
+
 .footer-socials-icon {
     fill: #FFFFFF;
 }
