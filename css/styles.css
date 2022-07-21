@@ -205,7 +205,7 @@ letter-spacing: 0.02em;
 }
 .contacts {
     display:flex;
-    align-items: center;
+    
     margin-left: auto;
 }
 
@@ -482,7 +482,7 @@ letter-spacing: 0.02em;
 .сlient-list {
     display: flex;
     justify-content: space-between;
-   
+
 }
 
 
@@ -498,9 +498,6 @@ letter-spacing: 0.02em;
     border-radius: 4px;
 }
 
-.client-item:hover {
-border-color: var(--accent-color);
-}
 
 .client-link {
     display: flex;
@@ -518,13 +515,19 @@ border-color: var(--accent-color);
 .client-icon:hover {
     color: var(--accent-color);
 }
+.client-item:hover {
 
-.second-color {
-    color: var(--accent-color);
-}
+    border-color: var(--accent-color);
+    }
+    
+    .client-link:hover {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
 
 /*--------------footer------------------------*/
 .footer {
+    display: block;
     height: 252px;
     background-color: #2F303A;
     padding-top: 60px;
@@ -559,8 +562,10 @@ margin-bottom: 20px;
 }
 
 .join-us {
-	margin: 12px 0 0 70px;
+    margin-left: 70px;
+    margin-bottom: 12px;
 }
+
 
 .footer-social-list {
     display: flex;
@@ -609,12 +614,14 @@ background-color: var(--accent-color);
     letter-spacing: 0.06em;
     margin-top: 20px;
     margin-bottom: 4px;
-
     color: var(--title-text-color);
 }
+
 .portfolio-text {
     font-size: 16px;
     line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
 
 .portfolio-btn-list {
@@ -640,12 +647,17 @@ background-color: var(--accent-color);
     border: none;
     padding:6px 22px;
 }
-.portfolio-btn:hover,.portfolio-btn:focus 
-{
+.portfolio-btn:hover,.portfolio-btn:focus {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
     background: var(--accent-color);
     color: F5F4FA;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
-} 
+ 
+}
+
+ 
 
 
 .project-list {
@@ -672,8 +684,10 @@ background-color: var(--accent-color);
     padding-top: 20px;
     border: none;
     border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+  color: var(--title-text-color);
 }
-
 
 .portfolio-img {
     display: block;
