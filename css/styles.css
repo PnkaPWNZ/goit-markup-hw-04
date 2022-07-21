@@ -609,6 +609,10 @@ background-color: var(--accent-color);
     background-color: var(--accent-color);
 }
 
+.footer-contacts:hover {
+    color: var(--accent-color);
+}
+
 .footer-social-link:hover
 .footer-social-link:focus
 /*-----------Second page portfolio------------------*/
