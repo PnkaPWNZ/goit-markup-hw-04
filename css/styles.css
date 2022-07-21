@@ -489,9 +489,7 @@ letter-spacing: 0.02em;
 
 .client-item {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 94px;
-    content: '';
+
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -534,6 +532,12 @@ letter-spacing: 0.02em;
     padding-bottom: 60px;
     margin-bottom: -90px;
 }
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
 .footer-contacts {
 font-size: 14px;
 font-style: normal;
@@ -555,15 +559,17 @@ color: var(--background-color);
 
 .footer-icon-title {
 font-style: normal;
-line-height: 1.14px;
-font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 color: #FFFFFF;
-margin-bottom: 20px;
 }
+
+
 
 .join-us {
     margin-left: 70px;
-    margin-bottom: 12px;
+
 }
 
 
